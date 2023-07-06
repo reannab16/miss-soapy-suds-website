@@ -24,8 +24,5 @@ body {
   background: var(--oceanColour);
 }
 
-bathboy {
-  background-image: url(https://raw.githubusercontent.com/reannab16/miss-soapy-suds/main/public/bathman.png);
-  background-size: cover;
-}
+
 
