@@ -26,3 +26,11 @@ body {
 
 
 
+@media screen and (min-width: 1536px) {
+  .bathboy {
+    height: 1500px;
+    background-size:cover ;
+  }
+  
+}
+
