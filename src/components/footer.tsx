@@ -30,6 +30,7 @@ export default function Footer() {
                 return (
                   <a
                     href={link.href}
+                    key={link.name}
                     className="font-extralight text-sm hover:font-semibold duration-300"
                   >
                     <li className="w-36 cursor-pointer">{link.name}</li>
