@@ -10,7 +10,7 @@ export default function Qualities() {
       
         {qualityList.map((item: qualityListType) => {
             return(
-                <div className="flex flex-col items-center justify-center">
+                <div className="flex flex-col items-center justify-center" key={item.name}>
                     <img src={item.href} alt="" className="h-28 w-28" />
                     <div className="text-[var(--cream)] text-base w-28 text-center">{item.descript}</div>
                 </div>
