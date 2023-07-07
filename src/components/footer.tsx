@@ -2,6 +2,9 @@ import React from "react";
 import Logo from "./icons";
 import { Montserrat } from "next/font/google";
 import { Song_Myung } from "next/font/google";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 const songMyung = Song_Myung({
     weight: '400',
@@ -14,7 +17,7 @@ const montserrat = Montserrat({
 
 export default function Footer() {
   return (
-    <div className="py-10 flex flex-row items-center justify-between mx-32">
+    <div className="py-10 flex flex-row items-center justify-between mx-28">
       <Logo className="h-40 w-40" />
       {footerBlock.map((item: footerBlockType) => {
         return (
@@ -30,7 +33,7 @@ export default function Footer() {
                     href={link.href}
                     className="font-extralight text-sm hover:font-semibold duration-300"
                   >
-                    <li className="w-36">{link.name}</li>
+                    <li className="w-36 cursor-pointer">{link.name}</li>
                   </a>
                 );
               })}
@@ -38,9 +41,10 @@ export default function Footer() {
           </div>
         );
       })}
-      <div className={`text-center ${songMyung.className} text-[var(--cream)] text-lg`}>
-        <p>Follow<br/>us on</p>
-        <FontAwesomeIcon icon={faInstagram} />
+      <div className={`text-center ${songMyung.className} text-[var(--cream)] text-xl flex flex-col items-center justify-center mb-auto py-10`}>
+        <div>Follow</div>
+        <div className="-mt-2 mb-2">us on</div>
+        <FontAwesomeIcon icon={faInstagram} className="text-base h-7 text-center"/>
 
       </div>
     </div>
