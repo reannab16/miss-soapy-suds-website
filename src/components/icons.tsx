@@ -20,4 +20,21 @@ function About({ className }: { className?: string }) {
     return <img className={className} src="bathmanfull.png" />;
   }
 
+  function Natural({ className }: { className?: string }) {
+    return <img className={className} src="1.svg" />;
+  }
+
+  function Entrep({ className }: { className?: string }) {
+    return <img className={className} src="2.svg" />;
+  }
+  
+  function Gift({ className }: { className?: string }) {
+    return <img className={className} src="3.svg" />;
+  }
+
+  function Rejuv({ className }: { className?: string }) {
+    return <img className={className} src="4.svg" />;
+  }
+  
+
 export {Logo, About, BlobIcon, SwirlyArrow, Bathman};
