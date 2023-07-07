@@ -5,11 +5,10 @@ import { Song_Myung } from "next/font/google";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
 const songMyung = Song_Myung({
-    weight: '400',
-    subsets: ['latin'],
-  })
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -41,11 +40,15 @@ export default function Footer() {
           </div>
         );
       })}
-      <div className={`text-center ${songMyung.className} text-[var(--cream)] text-xl flex flex-col items-center justify-center mb-auto py-10`}>
+      <div
+        className={`text-center ${songMyung.className} text-[var(--cream)] text-xl flex flex-col items-center justify-center mb-auto py-10`}
+      >
         <div>Follow</div>
         <div className="-mt-2 mb-2">us on</div>
-        <FontAwesomeIcon icon={faInstagram} className="text-base h-7 text-center"/>
-
+        <FontAwesomeIcon
+          icon={faInstagram}
+          className="text-base h-7 text-center"
+        />
       </div>
     </div>
   );
