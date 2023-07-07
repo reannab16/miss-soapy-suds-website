@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "./icons";
+import { Logo } from "./icons";
 import { Montserrat } from "next/font/google";
 import { Song_Myung } from "next/font/google";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";

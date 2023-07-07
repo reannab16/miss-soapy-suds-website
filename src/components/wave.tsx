@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Wave() {
+export default function Wave({speedy}: {speedy?:string}) {
   return (
     <svg width="100%" height="200px" fill="none">
       <path
@@ -16,10 +16,9 @@ export default function Wave() {
           V 67
           Z">
         <animate 
-          repeatCount="indefinite" 
-          fill="url(#grad1)" 
+          repeatCount="indefinite"  
           attributeName="d" 
-          dur="20s"
+          dur={speedy}
           attributeType="XML"
           values="
             M0 77 

@@ -9,6 +9,7 @@
   --background-end-rgb: 255, 255, 255;
   --oceanColour: #65A7B4;
   --cream: #EEECDE;
+  --pink: #d0bbbe;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,5 +33,9 @@ body {
     background-size:cover ;
   }
   
+}
+
+.italic {
+  font-style: italic;
 }
 
