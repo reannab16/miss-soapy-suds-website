@@ -6,7 +6,7 @@ export default function Qualities() {
   return (
     <div className="w-full md:h-[35rem] h-[30rem] flex-col flex items-center justify-between relative">
       <WaveFlip />
-      <div className="w-full flex items-center justify-around md:px-20 px-10">
+      <div className="w-full flex items-center justify-around md:px-20 px-10 flex-wrap sm:gap-y-0 gap-y-2">
       
         {qualityList.map((item: qualityListType) => {
             return(
