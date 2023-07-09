@@ -10,9 +10,9 @@ const montserrat = Montserrat({
 
 export default function AboutHome() {
   return (
-    <div className="w-full flex sm:flex-row flex-col items-center justify-between bg-[var(--cream)] py-20 md:px-20 sm:px-16">
+    <div className="w-full flex sm:flex-row flex-col items-center justify-between bg-[var(--cream)] pt-20 pb-24 md:px-20 sm:px-16">
       <div
-        className={`${montserrat.className} relative sm:order-1 order-2 sm:pt-0 pt-5 lg:text-lg text-base text-[var(--oceanColour)] md:w-[50%] flex md:flex-row flex-col items-center justify-center italic font-normal`}
+        className={`${montserrat.className} relative sm:-order-1 order-2 sm:pt-0 pt-5 lg:text-lg text-base text-[var(--oceanColour)] md:w-[50%] flex md:flex-row flex-col items-center justify-center italic font-normal`}
       >
         <span className="italic md:pb-0 pb-2">Want to learn more</span>{" "}
         <a
