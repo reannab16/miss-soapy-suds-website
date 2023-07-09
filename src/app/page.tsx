@@ -13,7 +13,7 @@ export default function Home() {
         <NavBar />
         <div className=" bathboy h-auto w-full relative">
           <img src="https://raw.githubusercontent.com/reannab16/miss-soapy-suds-website/main/public/bathmantext.png" alt="" className="w-full" />
-          <Wave speedy="20s" className={"absolute bottom-0"} />
+          <Wave speedy="20s" className={"absolute md:bottom-0 -bottom-10"} />
         </div>
         <Explore />
         <Advert />

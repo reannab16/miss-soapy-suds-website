@@ -12,7 +12,7 @@ export default function Advert() {
     return (
       <div className="w-full flex items-center justify-between bg-[var(--cream)] py-20 px-20">
         <div
-          className={`${montserrat.className} relative text-lg text-[var(--oceanColour)] w-[50%] flex items-center justify-center italic font-normal`}
+          className={`${montserrat.className} relative lg:text-lg text-base text-[var(--oceanColour)] w-[50%] flex items-center justify-center italic font-normal`}
         >
           <span className="italic w-[70%] text-center">Allow our suds to uplift your senses, invigorate your body and immerse you in a world of rejuvenating self-care.</span>
         </div>

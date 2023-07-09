@@ -4,15 +4,15 @@ import WaveFlip from "./waveFlip";
 
 export default function Qualities() {
   return (
-    <div className="w-full h-[35rem] flex-col flex items-center justify-between relative">
+    <div className="w-full md:h-[35rem] h-[30rem] flex-col flex items-center justify-between relative">
       <WaveFlip />
-      <div className="w-full flex items-center justify-around px-20">
+      <div className="w-full flex items-center justify-around md:px-20 px-10">
       
         {qualityList.map((item: qualityListType) => {
             return(
                 <div className="flex flex-col items-center justify-center" key={item.name}>
-                    <img src={item.href} alt="" className="h-28 w-28" />
-                    <div className="text-[var(--cream)] text-base w-28 text-center">{item.descript}</div>
+                    <img src={item.href} alt="" className="md:h-28 md:w-28 h-20 w-20" />
+                    <div className="text-[var(--cream)] md:text-base text-sm w-28 text-center">{item.descript}</div>
                 </div>
             )
 

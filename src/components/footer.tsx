@@ -16,8 +16,8 @@ const montserrat = Montserrat({
 
 export default function Footer() {
   return (
-    <div className="py-10 flex flex-row items-center justify-between container px-8">
-      <Logo className="h-40 w-40" />
+    <div className="py-10 flex md:flex-row flex-col flex-wrap md:items-center items-start md:justify-between justify-start container px-8">
+      <Logo className="lg:h-40 lg:w-40 md:h-32 md:w-32 h-28 w-28 mr-2 md:mt-0 mt-5 md:order-1 order-4" />
       {footerBlock.map((item: footerBlockType) => {
         return (
           <div
@@ -42,7 +42,7 @@ export default function Footer() {
         );
       })}
       <div
-        className={`text-center ${songMyung.className} text-[var(--cream)] text-xl flex flex-col items-center justify-center mb-auto py-10`}
+        className={`text-center ${songMyung.className} text-[var(--cream)] text-xl md:flex hidden flex-col items-center justify-center mb-auto py-10`}
       >
         <div>Follow</div>
         <div className="-mt-2 mb-2">us on</div>
