@@ -5,7 +5,7 @@ import { SwirlyArrow } from "./icons";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: '--fontmontitalic'
+  variable: "--fontmontitalic",
 });
 
 export default function AboutHome() {
@@ -14,8 +14,14 @@ export default function AboutHome() {
       <div
         className={`${montserrat.className} relative text-lg text-[var(--oceanColour)] w-[50%] flex items-center justify-center italic font-normal`}
       >
-        <span className="italic">Want to learn more</span> <a href="" className="cursor-pointer py-2 px-3 bg-[var(--oceanColour)] text-[var(--cream)] rounded-full ml-2 hover:bg-[var(--pink)] duration-300 hover:-translate-y-1">about us?</a>
-        <SwirlyArrow className=" absolute h-16 -top-14 right-24"/>
+        <span className="italic">Want to learn more</span>{" "}
+        <a
+          href=""
+          className="cursor-pointer py-2 px-3 bg-[var(--oceanColour)] text-[var(--cream)] rounded-full ml-2 hover:bg-[var(--pink)] duration-300 hover:-translate-y-1 relative"
+        >
+          about us?
+          <SwirlyArrow className=" absolute h-16 -top-14 -right-9" />
+        </a>
       </div>
       <div className="w-[40%] flex items-center justify-center relative">
         <BlobIcon className=" w-[100%] h-auto absolute left-0 top-0" />

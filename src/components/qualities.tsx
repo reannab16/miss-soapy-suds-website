@@ -4,7 +4,7 @@ import WaveFlip from "./waveFlip";
 
 export default function Qualities() {
   return (
-    <div className="w-full h-[70vh] flex-col flex items-center justify-between relative">
+    <div className="w-full h-[35rem] flex-col flex items-center justify-between relative">
       <WaveFlip />
       <div className="w-full flex items-center justify-around px-20">
       

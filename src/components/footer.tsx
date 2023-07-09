@@ -16,7 +16,7 @@ const montserrat = Montserrat({
 
 export default function Footer() {
   return (
-    <div className="py-10 flex flex-row items-center justify-between mx-28">
+    <div className="py-10 flex flex-row items-center justify-between container px-8">
       <Logo className="h-40 w-40" />
       {footerBlock.map((item: footerBlockType) => {
         return (

@@ -1,15 +1,15 @@
 import React from "react";
 
-export default function Wave({speedy}: {speedy?:string}) {
+export default function Wave({speedy, className}: {speedy?:string, className?:string},) {
   return (
-    <svg width="100%" height="200px" fill="none">
+    <svg width="100%" height="200px" fill="none" className={className}>
       <path
         fill="var(--cream)"
         d="
         M0 77 
             C 473,283
               822,-40
-              1720,100 
+              1920,100 
           
           V 359 
           H 0 
@@ -24,7 +24,7 @@ export default function Wave({speedy}: {speedy?:string}) {
             M0 77 
             C 473,283
               822,-40
-              1720,100 
+              1920,100 
             
             V 359 
             H 0 
@@ -34,7 +34,7 @@ export default function Wave({speedy}: {speedy?:string}) {
             M0 107 
             C 473,-70
               1122,300
-              1320,75
+              1720,75
             
             V 359 
             H 0 
@@ -46,7 +46,7 @@ export default function Wave({speedy}: {speedy?:string}) {
             M0 77 
             C 473,283
               822,-40
-              1720,100
+              1920,100
             
             V 359 
             H 0 

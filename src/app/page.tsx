@@ -8,15 +8,18 @@ import Qualities from "@/components/qualities";
 
 export default function Home() {
   return (
-    <main className="relative container mx-auto bg-[var(--oceanColour)] mt-4 rounded-3xl border-4 border-[var(--cream)] overflow-hidden flex flex-col justify-center">
-      <NavBar />
-      <div className=" bathboy lg:h-[700px] md:h-[450px] w-full bg-[url('https://raw.githubusercontent.com/reannab16/miss-soapy-suds-website/main/public/bathmantext.png')] bg-contain bg-no-repeat bg-top flex flex-col items-center justify-end">
-        <Wave speedy="20s" />
+    <main className="relative container flex items-center justify-center mx-auto">
+      <div className="bg-[var(--oceanColour)] mt-4 rounded-3xl border-4 border-[var(--cream)] overflow-hidden flex flex-col justify-center w-full">
+        <NavBar />
+        <div className=" bathboy h-auto w-full relative">
+          <img src="https://raw.githubusercontent.com/reannab16/miss-soapy-suds-website/main/public/bathmantext.png" alt="" className="w-full" />
+          <Wave speedy="20s" className={"absolute bottom-0"} />
+        </div>
+        <Explore />
+        <Advert />
+        <Qualities />
+        <AboutHome />
       </div>
-      <Explore />
-      <Advert/>
-      <Qualities/>
-      <AboutHome/>
     </main>
   );
 }
